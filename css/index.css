@@ -1,0 +1,50 @@
+
+
+body {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background: url(/img/main.jpg) no-repeat;
+    background-size: cover;
+    background-color: rgb(199, 249, 199);
+}
+.header_wrapper {
+    max-width: 1920px;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    border-bottom: 0.5px solid darkgreen;
+    background: linear-gradient(180deg, rgba(31, 87, 70, 0.85), rgba(1, 55, 39, 0.85));
+    opacity: 0.2;
+    
+   
+}
+
+nav {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+.nav__about,
+.nav__call {
+    font-size: 27px;
+    color: black;
+    text-decoration: none;
+    width: 15%;
+    opacity: 1;
+    text-align: center;
+    
+    
+  
+}
+
+.nav__about {
+    padding-top: 20px;
+}
+
