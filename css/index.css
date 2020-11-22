@@ -29,8 +29,19 @@ nav {
     width: 65%;
     justify-content: space-around;
     flex-wrap: wrap;
+    z-index: 1;
   
 }
+.slide-toggle {
+    display: flex;
+   flex-direction: column;
+    width: 70%;
+    overflow: hidden;
+    transition: all 1.5s; 
+    z-index: 2;
+  }
+  
+
 
 .nav__about,
 .nav__call {
@@ -38,15 +49,29 @@ nav {
     color: rgb(1, 45, 21);
     text-decoration: none;
     width: 15%;
-    opacity: 1;
     text-align: center;
     
     
   
 }
+.nav__about {
+    height:99%;
+    background: linear-gradient(180deg, rgba(31, 87, 70, 0), rgba(1, 55, 39, 0));
+}
 
+.nav__about:hover{
+    background: linear-gradient(180deg, rgba(31, 87, 70, 0), rgba(1, 55, 39, 0));
+    list-style: none;
+}
+.nav__about:active {
+    background: linear-gradient(180deg, rgba(31, 87, 70, 0), rgba(1, 55, 39, 0));;
+}
+i {
+    text-decoration: none;
+}
 i:hover {
     color:lightgreen;
+    list-style: none;
 }
 
 .nav__about {

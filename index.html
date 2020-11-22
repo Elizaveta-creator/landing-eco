@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-animate.min.js"></script>
     <link href="css/index.css" rel="stylesheet" type="text/css"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -11,9 +14,20 @@
     </head>
     <body>
         
-        <header class="header_wrapper">
+        <header ng-app="app" class="header_wrapper">
+            
+           
             <nav>
-            <a href="@" class="nav__about">О нас</a>
+            
+                    <button class="nav__about btn btn-default"
+                            ng-click="slideToggle=! slideToggle">О нас</button>
+          <div class="slide-toggle" ng-show="slideToggle">
+
+                  <p>
+                    Всякая нужная информация...
+                  </p>
+                                                                              </div>
+            
             <a href="tel:+79096403341" class="nav__call">Позвонить <i>89096403341</i></a>
             </nav>
         </header>
@@ -22,5 +36,6 @@
         <div class="email">
             <a class="btn" href="mailto:tpapunova@mail.ru"><img class="btn__img" src="img/email.png"></a>
         </div></footer>
+        <script src="slider.js"></script>
         </body>
         </html>
