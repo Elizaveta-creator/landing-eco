@@ -39,6 +39,7 @@ nav {
     overflow: hidden;
     transition: all 1.5s; 
     z-index: 2;
+    background-color: white;
   }
   
 
@@ -50,6 +51,8 @@ nav {
     text-decoration: none;
     width: 15%;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+
     
     
   
@@ -88,7 +91,16 @@ footer {
     display: flex;
 	height: 80px;
 }
+.btn {
+    border: none;
+}
+.btn:hover {
+    outline: none;
+}
 
+.btn:focus {
+    outline: none;
+}
 .btn__img {
     width: 80px;
     height: 80px;
@@ -96,4 +108,53 @@ footer {
 
 .btn__img:hover {
     opacity: 0.5;
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.content__title_pos
+{margin-top: 1em;}
+
+.content__title {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 57px;
+    text-align: center;
+}
+
+.slide-toggle li
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+}
+.slide-toggle p
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+}
+
+.slide-toggle h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 37px;
+    color: green;
+}
+
+span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    color: darkgreen  
+}
+.content__main_pos {
+    margin-left: 10%;
+}
+ul {
+    
+    width: 40%;
+    font-family: 'Oswald', sans-serif;
+  
+    color: rgb(1, 52, 1);
 }
