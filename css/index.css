@@ -109,12 +109,16 @@ footer {
 .btn__img:hover {
     opacity: 0.5;
 }
+.content-wrapper {
+    max-width: 1920px;
+    width:100%;
+}
 .content {
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 .content__title_pos
 {margin-top: 1em;}
@@ -149,11 +153,11 @@ span {
     color: darkgreen  
 }
 .content__main_pos {
-    margin-left: 10%;
+    margin-left: 35%;
 }
 ul {
     
-    width: 40%;
+    width: 100%;
     font-family: 'Oswald', sans-serif;
   
     color: rgb(1, 52, 1);
