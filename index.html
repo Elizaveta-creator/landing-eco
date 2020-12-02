@@ -81,48 +81,38 @@
             
             <a href="tel:+79096403341" class="nav__call">Позвонить <i>89096403341</i></a>
             </nav>
-        </header>
+        
         <div class="content content-wrapper">
         <h1 class="content__title content__title_pos">Экология и природопользование</h1>
 
         <ul class="content__main content__main_pos">
-            <li>Опыт успешной работы в отрасли более 15 лет</li>
+           
        <li>Комплексное проектирование экологических разделов проктной документации: 
                 МООС, ПМООС, ОВОС, СЗЗ</li>
-            <li>Согласование проекта в экологической экспертизе любого уровня </li>
+            
             <li>Доработка и согласование проектов, получивших отрицательное заключение в части экологии</li>
-            <li>Работаем в короткие сроки и за умеренную стоимость</li>
+           
         </ul>
-        <div class="overview overview_pos" id="app">
-            <h2>Отзывы</h2>
-            <div class="user">
-              <div class="user-information">
-                
-                <h3>{{ username }}</h3>
-              </div>
-              <div class="user-bio" v-if="bio">
-                <em>Bio: </em> {{ bio }}
-              </div>
-            </div>
-            <div class="tweets">
-              <div class="tweet" v-for="tweet in tweets">
-                <h3>{{ username }}</h3>
-                <p>{{ tweet }}</p>
-              </div>
-            </div>
-            <div class="settings">
-              <h2>Settings</h2>
-              <label for="username">Username</label>
-              <input type="text" value="username" placeholder="Username" v-model="username" />
-              <label for="bio">Bio</label>
-              <textarea value="bio" placeholder="Bio" v-model="bio"></textarea>
-              <label for="tweet">New Tweet</label>
-              <div class="new-tweet">
-                <input type="text" value="tweet" placeholder="New Tweet" v-model="newTweet"/>
-                <button v-on:click="tweets.push(newTweet)">Add Tweet</button>
-              </div>
-            </div>
-          </div></div>
+</div>
+</header>
+<div class="advantages">
+<h2 class="advantages__title">Почему стоит выбрать нас?</h2>
+
+<div class="experience">
+  <img src="img/work.jpeg">
+  <p>Опыт успешной работы в отрасли более 15 лет</p>
+</div>
+
+<div class="experience">
+  <img src="img/ecology.jpeg">
+  <p>Согласование проекта в экологической экспертизе любого уровня</p>
+</div>
+
+<div class="experience">
+  <img src="img/fast-work.jpeg">
+  <p>Работаем в короткие сроки и за умеренную стоимость</p>
+</div>
+</div>
         <footer class="footer_wrapper">
         <div class="email">
             <a class="btn" href="mailto:tpapunova@mail.ru"><img class="btn__img" src="img/email.png"></a>

@@ -5,9 +5,8 @@ body {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: url(/img/main.jpg) no-repeat;
-    background-size: cover;
-    background-color: rgb(199, 249, 199);
+
+    background-color: rgb(215, 244, 215);
 }
 .header_wrapper {
     max-width: 1920px;
@@ -16,9 +15,11 @@ header{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    height: 70px;
+    flex-wrap: wrap;
+    height: 100%;
     border-bottom: 0.5px solid darkgreen;
-    background: linear-gradient(180deg, rgba(31, 87, 70, 0.2), rgba(1, 55, 39, 0.2));
+    background: url(/img/main.jpg) no-repeat;
+    background-size: cover;
 
     
    
@@ -26,7 +27,7 @@ header{
 
 nav {
     display: flex;
-    width: 65%;
+    width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
     z-index: 1;
@@ -46,7 +47,7 @@ nav {
 
 .nav__about,
 .nav__call {
-    font-size: 27px;
+    font-size: 32px;
     color: rgb(1, 45, 21);
     text-decoration: none;
     width: 15%;
@@ -149,16 +150,58 @@ footer {
 
 span {
     font-family: 'Oswald', sans-serif;
-    font-size: 27px;
+    font-size: 37px;
     color: darkgreen  
 }
 .content__main_pos {
     margin-left: 35%;
+    padding-top: 15em;
+    padding-bottom: 25em;
 }
 ul {
     
     width: 100%;
     font-family: 'Oswald', sans-serif;
-  
+    font-size: 1.5rem;
+  line-height: 40px;
     color: rgb(1, 52, 1);
+}
+
+
+.advantages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.advantages__title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    padding: 40px;
+    color: rgb(2, 62, 2)  
+}
+
+.experience {
+   
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.experience img {
+    width: 100%;
+
+}
+
+.experience p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+    color: darkgreen; 
+   
+
 }
