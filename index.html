@@ -10,7 +10,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-animate.min.js"></script>
     <link href="css/index.css" rel="stylesheet" type="text/css"> 
     <link href="css/overview.css" rel="stylesheet" type="text/css"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
     <meta charset="utf-8">
 
     
@@ -22,7 +23,7 @@
             
            
             <nav>
-                
+                    <img class="nav__img" src="img/msu_logo.gif">
                     <div class="nav__about btn btn-default"
                             ng-click="slideToggle=! slideToggle">О нас</div>
           <div class="slide-toggle" ng-show="slideToggle">
@@ -83,7 +84,7 @@
             </nav>
         
         <div class="content content-wrapper">
-        <h1 class="content__title content__title_pos">Экология и природопользование</h1>
+        <h1 class="content__title content__title_pos">Экологическое проектирование</h1>
 
         <ul class="content__main content__main_pos">
            
@@ -95,28 +96,78 @@
         </ul>
 </div>
 </header>
-<div class="advantages">
+<div class="advantages advantages_pos">
 <h2 class="advantages__title">Почему стоит выбрать нас?</h2>
 
-<div class="experience">
+<div class="experience experience_pos">
   <img src="img/work.jpeg">
-  <p>Опыт успешной работы в отрасли более 15 лет</p>
+  <p>&#10003;  Опыт успешной работы в отрасли более 15 лет</p>
 </div>
 
-<div class="experience">
+<div class="experience experience_pos">
   <img src="img/ecology.jpeg">
-  <p>Согласование проекта в экологической экспертизе любого уровня</p>
+  <p>&#10003;  Согласование проекта в экологической экспертизе любого уровня</p>
 </div>
 
-<div class="experience">
+<div class="experience experience_pos">
   <img src="img/fast-work.jpeg">
-  <p>Работаем в короткие сроки и за умеренную стоимость</p>
+  <p>&#10003;  Работаем в короткие сроки и за умеренную стоимость</p>
 </div>
+<div class="info info_pos">
+  <div class="about">
+    <h2 class="about__title">О нас</h2>
+    <div class="about__main about__main_pos">
+      <img  class="about-main__img" src="img/state.jpg">
+      <p class="about-main__p">Проектирование  выполняет группа опытных специалистов, имеющих высокое профессиональное экологическое образование (МГУ им. Ломоносова) и регулярно повышающих свой уровень на  курсах строительного, технического  и экологического профиля,  в том  числе  в Учебном центре Главгосэкспертизы России  и специализированных курсах ИПК «Интеграл»... </p>
+    </div>
+  </div>
+  <div class="blog">
+    <h2 class="blog__title">Статьи</h2>
+    <div class="blog__main blog__main_pos">
+      <div class="ovos">
+      <img src="img/ovos.jpg">
+      <p>Оценка воздействия на окружающую среду (ОВОС) – вид деятельности по выявлению, анализу и учету прямых, косвенных и иных последствий воздействия на окружающую среду планируемой хозяйственной и иной деятельности в целях принятия решения о возможности или невозможности ее осуществления юридическими лицами и индивидуальными предпринимателями.</p>
+    </div>
+
+    <div class="pmoos pmoos_pos">
+      <img src="img/pmoos.jpg">
+      <p>Перечень мероприятий по охране окружающей среды (Раздел ПМ ООС) входит в состав проектной документации и содержит комплекс предложений по рациональному использованию природных ресурсов в строительстве и технических решений по предупреждению негативного воздействия проектируемого объекта на окружающую природную среду.
+    </div>
+  </div>
+</div>
+</div>
+<div class="reviews reviews_pos">
+  <h2 class="reviews__title">Отзывы</h2>
+  <div class="slider__wrap">
+    <div class="slide slide-active slide_pos" data-id="1">1</div>
+    <div class="slide" data-id="2">2</div>
+    <div class="slide" data-id="3">3</div>
+    <div class="slide" data-id="4">4</div>
+    <div class="slide" data-id="5">5</div>
+    <div class="slider__controllers">
+      <strong data-action="prev" class="slider__btn slider__controllers__next"><</strong>
+      <strong data-action="next" class="slider__btn slider__controllers__previous">></strong>
+    </div>
+  </div>
+  
+  <div class="slider__dots">
+  </div>
+</div>
+<div class="brands-logo brands-logo_pos">
+  <h2 class="brands__title">Наши заказчики</h2>
+  <div class="brands brands_pos">
+  <img class="barnds__img" src="img/mosvodokanal.png">
+  <img class="barnds__img" src="img/pride.webp">
+  <img class="barnds__img" src="img/transneft.png">
+  <img src="img/ipromash.png">
+</div></div>
 </div>
         <footer class="footer_wrapper">
         <div class="email">
             <a class="btn" href="mailto:tpapunova@mail.ru"><img class="btn__img" src="img/email.png"></a>
         </div></footer>
+        
+        <script type="text/javascript" src="js/reviews.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/vue.js"></script>
         </body>

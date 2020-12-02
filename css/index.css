@@ -122,7 +122,7 @@ footer {
     justify-content: space-between;
 }
 .content__title_pos
-{margin-top: 1em;}
+{margin-top: 0.2em;}
 
 .content__title {
     width: 100%;
@@ -155,18 +155,25 @@ span {
 }
 .content__main_pos {
     margin-left: 35%;
-    padding-top: 15em;
+    padding-top: 13em;
     padding-bottom: 25em;
 }
-ul {
+.content__main li{
     
-    width: 100%;
+    width: 50%;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
+    font-size: 30px;
+    flex-wrap:wrap;
   line-height: 40px;
     color: rgb(1, 52, 1);
 }
-
+.advantages_pos,
+.info_pos,
+.reviews_pos,
+.brands-logo_pos {
+    margin-top: 200px;
+    
+}
 
 .advantages {
     width: 100%;
@@ -175,15 +182,28 @@ ul {
     justify-content: space-around;
     flex-direction: row;
 }
-.advantages__title {
+.advantages__title,
+.reviews__title,
+.about__title,
+.blog__title,
+.brands__title  {
+   
     width: 100%;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 45px;
     padding: 40px;
-    color: rgb(2, 62, 2)  
-}
+    color: white;
+    background-color: rgb(92, 138, 92);
 
+}
+.experience_pos,
+.about__main_pos,
+.blog__main_pos,
+.slide_pos,
+.brands_pos {
+    margin-top: 50px;
+}
 .experience {
    
     width: 30%;
@@ -204,4 +224,178 @@ ul {
     color: darkgreen; 
    
 
+}
+
+.nav__img {
+    padding-top: 15px;
+    width: 15%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .info {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .about,
+  .blog {
+      width: 43%;
+      flex-direction: column;
+      
+  }
+
+  .about__main {
+      background-color: white;
+  }
+.blog__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  .ovos,
+  .pmoos {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: white;
+  }
+.pmoos_pos {
+    margin-top: 160px;
+}
+  .ovos img {
+      width: 50%;
+      
+  }
+  
+.ovos p{
+    width: 45%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    color: darkgreen; 
+}
+.pmoos img {
+    width: 50%;
+}
+.pmoos p {
+    width: 45%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    color: darkgreen; 
+}
+  .about-main__img {
+     width: 100%;
+  }
+  .reviews {
+      width: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .slider__controllers {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .slider__controllers__next, .slider__controllers__previous {
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+    color: darkgreen;
+  }
+  
+  .slider__wrap {
+    margin: 20px;
+    width: 60%;
+    height: 380px;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .slide-active {
+    opacity: 1;
+  }
+  .slide:nth-child(1) {
+    background: rgb(228, 245, 228);
+  }
+  .slide:nth-child(2) {
+    background: rgb(228, 245, 228);
+  }
+  .slide:nth-child(3) {
+    background: rgb(228, 245, 228);
+  }
+  .slide:nth-child(4) {
+    background:rgb(228, 245, 228);
+  }
+  .slide:nth-child(5) {
+    background: rgb(228, 245, 228);
+  }
+  
+  .slider__dots {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    background: rgb(122, 143, 122);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .dot-active {
+    background: darkgreen;
+  }
+  .brands-logo {
+    display: flex;
+    width: 100%;
+  justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.brands {
+    width: 95%;
+    background-color: white;
+    justify-content: space-between;
+}
+
+
+
+.barnds__img {
+    margin-top: 30px;
+    width: 25%;
+    padding-left: 30px;
+    height: 25%;
+}
+
+
+.about-main__p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+    color: darkgreen; 
 }
