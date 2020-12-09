@@ -554,6 +554,7 @@ outline:none;
 
 .footer-wrapper {
     max-width: 1920px;
+    
     }
     
     footer {
@@ -587,6 +588,8 @@ outline:none;
     }
 
     .footer-info {
+        justify-content: space-around;
+        display: flex;
         width: 100%;
         flex-direction: row;
     }
