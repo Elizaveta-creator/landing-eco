@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" ></script>
   <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-animate.min.js"></script>
@@ -20,82 +21,49 @@
     <body>
         
         <header ng-app="app" class="header_wrapper">
-            
-           
-           <!-- <nav>
-                    <img class="nav__img" src="img/msu_logo.gif">
-                    <div class="nav__about btn btn-default"
-                            ng-click="slideToggle=! slideToggle">О нас</div>
-          <div class="slide-toggle" ng-show="slideToggle">
-<h2>Немного информации о нас</h2>
-                  <ul><li>
-                    Комплексное проектирование экологических разделов проектной
-                    документации:  ПМООС, МООС, а также проектов ОВОС, СЗЗ.тоощлщл
-                    Согласование проекта в экологической экспертизе любого уровня-
-                    Мосгосэкспертизе, Мособлэкспертизе, Главгосэкспертизе России,
-                    вневедомственных экспертизах. Успешно работаем с Государственной
-                    экологической экспертизой (ГЭЭ). В Москве, Санкт-Петербурге и
-                    регионах.
-                  </li>
-                    <li>Доработка и согласование проектов, получивших отрицательное заключение
-                    в части экологии.
-                    </li>
-                    <li>Умеем общаться и находить компромиссные решения с экспертами по самым
-                    проблемным и тяжелым экологическим вопросам проекта.
-                    </li>
-                   <li> Опыт успешной работы в отрасли – более 15 лет по проектам объектов
-                    гражданского и промышленного строительства: проекты
-                    многофункциональных и жилых комплексов, промышленных объектов
-                    различных отраслей, инженерной инфраструктуры (сети, очистные
-                    сооружения, полигоны ТКО), объекты транспортной и медицинской
-                    инфраструктуры.
-                    </li>> </ul>
-                    <h2>Наши проекты</h2>
-                    <ul>
-                    <span>Среди значимых и интересных завершенных объектов</span>
-                    <li>Проект Башни «Эволюция» в Москва-Сити</li>
-                    <li>Трассовый измерительный пункт «Сахалин»
-                    (структура космодрома «Восточный») </li>
-                    
-                    <li>Детская городская клиническая
-                    больница им. Св. Владимира в Москве (инфекционный корпус)</li>
-                    <li>
-                    Многофункциональный жилой комплекс по адресу: г. Москва, Ильменский
-                    проезд, вл. 14 (4 очереди строительства)</li>
-                    <li>Строительство вертолетной
-                    площадки и ангаров на территории Центра «Бизнес-авиация» аэропорта
-                    «Внуково» и многое другое.</li></ul>
-                    <br>
-                    <p>
-                    Владеем всем необходимым современным программным экологическим
-                    обеспечением для разработки проекта и получения положительного
-                    заключения.</p>
-                    <p>
-                    Работаем в короткие сроки и за умеренную стоимость. Гибко подходим к
-                    формированию стоимости с учетом возможностей проектной сметы и
-                    сложившейся экономической ситуации в стране.</p>
-                    <p>
-                    Возможны различные удобные для Вас формы сотрудничества, в том числе
-                    как с ИП.
-                  </p>
-                                                                              </div>
-            
-            <a href="tel:+79096403341" class="nav__call">Позвонить <i>89096403341</i></a>
-            </nav>
-          -->
         <div class="content content-wrapper">
-        <h1 class="content__title content__title_pos">Экологическое проектирование</h1>
+          <nav class="content__nav">
+            <img class="content__img" src="img/msu_logo.gif">
+            <a href="#" id="callme">Что мы предлагаем</a>
+            <a href="#" id="callme1">Почемы мы</a>
+            <a href="#" id="callme2">О нас</a>
+            <a href="#" id="callme3">Блог</a>
+            <a href="#" id="callme4">Отзывы</a>
+            <a href="#" id="callme5">Контакты</a>
+          </nav>
+        <h1 class="content__title">Экологическое проектирование</h1>
 
-        <ul class="content__main content__main_pos">
-           
-       <li>Комплексное проектирование экологических разделов проктной документации: 
-                МООС, ПМООС, ОВОС, СЗЗ</li>
-            
-            <li>Доработка и согласование проектов, получивших отрицательное заключение в части экологии</li>
-           
-        </ul>
 </div>
 </header>
+<div class="our-offer our-offer_pos">
+  <h1 class="our-offer__title">Что мы предлагаем</h1>
+  <div class="main">
+  <ul class="content__main content__main_pos">
+           
+    <li>Комплексное проектирование экологических разделов проектной
+      документации:  ПМООС, МООС, а также проектов ОВОС, СЗЗ.</li>
+         
+         <li>Выполняем согласование проекта в экологической экспертизе любого
+          уровня- Мосгосэкспертизе, Мособлэкспертизе, Главгосэкспертизе России,
+          вневедомственных экспертизах.</li>
+
+          <li>Доработка и согласование проектов, получивших отрицательное заключение
+            в части экологии.</li>
+            <li>Умеем общаться и находить компромиссные решения с экспертами по самым
+              проблемным и тяжелым экологическим вопросам проекта.</li>
+        <li>Проекты санитарно-защитных зон предприятий;</li>
+        <li>Проекты нормативов допустимых выбросов загрязняющих веществ в атмосферный воздух;</li>
+     </ul>
+     <img class="content__main-img" src="img/sheme.png">
+</div>
+<script>
+  $("#callme").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".our-offer__title").offset().top  
+      }, 1000); 
+  });
+  </script>
+</div>
 <div class="advantages advantages_pos">
 <h2 class="advantages__title">Почему стоит выбрать нас?</h2>
 
@@ -112,7 +80,14 @@
 <div class="experience experience_pos">
   <img src="img/fast-work.jpeg">
   <p>&#10003;  Работаем в короткие сроки и за умеренную стоимость</p>
-</div>
+
+  <script>
+    $("#callme1").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".advantages__title").offset().top  
+        }, 1000); 
+    });
+    </script></div>
 <div class="info info_pos">
   <div class="about">
     <h2 class="about__title">О нас</h2>
@@ -135,6 +110,20 @@
     </div>
   </div>
 </div>
+<script>
+  $("#callme2").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".about__title").offset().top  
+      }, 1000); 
+  });
+
+  $("#callme3").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".blog__title").offset().top  
+      }, 1000); 
+  });
+  
+  </script>
 </div>
 <div class="reviews reviews_pos">
   <h2 class="reviews__title">Отзывы</h2>
@@ -152,11 +141,19 @@
   
   <div class="slider__dots">
   </div>
+  <script>
+    $("#callme4").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".reviews__title").offset().top  
+        }, 1000); 
+    });
+    </script>
 </div>
 
-<form>
+
 <div class="contents contents_pos bgcolor-1">
   <h2 class="contents__title">Обратная связь</h2>
+  <form class="form">
  <div class="inputs inputs_pos">
   <span class="input input--haruki">
     <input class="input__field input__field--haruki" type="text" id="input-1">
@@ -178,25 +175,73 @@
   </span>
   <input class="contents__btn contents__btn_pos" value="Отправить" type="button">
 </div>
-  <img class="contents__img" src="img/feedback.png">
+  <textarea placeholder="Текст сообщения"></textarea>
 </div>
 </form>
+<script>
+  $("#callme5").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".contents__title").offset().top  
+      }, 1000); 
+  });
+  </script>
 </div>
         <footer class="footer_wrapper">
-          <ul class="footer-info">
+          
+          <ul class="column">
             <li>О нас</li>
             <li>Контакты</li>
             <li>Блог</li>
             
+          </ul>
+          <ul class="column">
+            <li>Почему мы</li>
+            <li>Наши преимущества</li>
+            <li>Отзывы</li>
+          </ul>
+          <ul class="column">
+            <li>ИП Папунова Татьяна Альбертовна</li>
+            <li><a href="tel: +79096403341">Телефон: 8(909)640-33-41</a></li>
+            <li><a href="email: tpapunova@mail.ru">Email: tpapunova@mail.ru</a></li>
           </ul>
         <div class="email">
             <a class="btn" href="mailto:tpapunova@mail.ru"><img class="btn__img" src="img/email.png"></a>
         </div>
 
       </footer>
-        
+        <div id="toTop">
+          <img class="arrow" src="img/arrow.png">
+        </div>  
         <script type="text/javascript" src="js/reviews.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/vue.js"></script>
-        </body>
+        <script type="text/javascript">
+ 
+          $(function() {
+           
+          $(window).scroll(function() {
+           
+          if($(this).scrollTop() != 0) {
+           
+          $('#toTop').fadeIn();
+           
+          } else {
+           
+          $('#toTop').fadeOut();
+           
+          }
+           
+          });
+           
+          $('#toTop').click(function() {
+           
+          $('body,html').animate({scrollTop:0},800);
+           
+          });
+           
+          });
+           
+          </script>
+      
+      </body>
         </html>

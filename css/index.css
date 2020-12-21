@@ -16,23 +16,17 @@ header{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    height: 100%;
-    border-bottom: 0.5px solid darkgreen;
-    background: url(/img/main.jpg) no-repeat;
+    height: 400px;
+   
+    background: url(../img/mainn.jpg) no-repeat;
     background-size: cover;
 
     
    
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    z-index: 1;
-  
-}
+
+
 .slide-toggle {
     display: flex;
    flex-direction: column;
@@ -45,42 +39,6 @@ nav {
   
 
 
-.nav__about,
-.nav__call {
-    font-size: 32px;
-    color: rgb(1, 45, 21);
-    text-decoration: none;
-    width: 15%;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-
-    
-    
-  
-}
-.nav__about {
-    height:99%;
-    background: linear-gradient(180deg, rgba(31, 87, 70, 0), rgba(1, 55, 39, 0));
-}
-
-.nav__about:hover{
-    background: linear-gradient(180deg, rgba(31, 87, 70, 0), rgba(1, 55, 39, 0));
-    list-style: none;
-}
-.nav__about:active {
-    background: linear-gradient(180deg, rgba(31, 87, 70, 0), rgba(1, 55, 39, 0));;
-}
-i {
-    text-decoration: none;
-}
-i:hover {
-    color:lightgreen;
-    list-style: none;
-}
-
-.nav__about {
-    padding-top: 20px;
-}
 
 .content-wrapper {
     max-width: 1920px;
@@ -93,14 +51,35 @@ i:hover {
     flex-direction: column;
     justify-content: space-between;
 }
-.content__title_pos
-{margin-top: 0.2em;}
+
 
 .content__title {
-    width: 100%;
+    width: 20%;
     font-family: 'Oswald', sans-serif;
     font-size: 57px;
-    text-align: center;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    line-height: 90px;
+}
+.content__nav 
+{width: 100%;
+justify-content: space-around;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+height: 50px;}
+
+.content__nav a {
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: rgb(0, 21, 3);
+
+}
+
+.content__img {
+    width: 15%;
 }
 
 .slide-toggle li
@@ -126,19 +105,37 @@ span {
     color: darkgreen  
 }
 .content__main_pos {
-    margin-left: 35%;
-    padding-top: 13em;
-    padding-bottom: 25em;
+    
+    padding-top: 4em;
+   
 }
+.content__main {
+    width: 50%;
+}
+
 .content__main li{
     
-    width: 50%;
+    width: 100%;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     flex-wrap:wrap;
   line-height: 40px;
     color: rgb(1, 52, 1);
+    padding-top: 20px;
 }
+.content__main-img {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+.our-offer_pos,
 .advantages_pos,
 .info_pos,
 .reviews_pos,
@@ -155,6 +152,7 @@ span {
     justify-content: space-around;
     flex-direction: row;
 }
+.our-offer__title,
 .advantages__title,
 .reviews__title,
 .about__title,
@@ -563,7 +561,7 @@ outline:none;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-        height: 80px;
+        justify-content: space-around;
         flex-direction: row;
         background-color: rgb(29, 38, 38);
     }
@@ -587,13 +585,14 @@ outline:none;
         opacity: 0.5;
     }
 
-    .footer-info {
+    .column
+    {
         justify-content: space-around;
         display: flex;
-        width: 100%;
-        flex-direction: row;
+        width: 33%;
+        flex-direction: column;
     }
-    .footer-info li {
+    .column li {
         list-style-type: none;
         font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -601,3 +600,29 @@ outline:none;
     color: white;
 
     }
+
+    .form {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    textarea {
+        width: 40%;
+    }
+
+    #toTop {
+        width:120px;
+      
+
+        padding:5px;
+        position:fixed;
+        bottom:10px; /* отступ кнопки от нижнего края страницы*/
+        right:10px;
+        cursor:pointer;
+
+        }
+        .arrow {
+            width: 100%;
+        }
