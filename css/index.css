@@ -574,7 +574,13 @@ outline:none;
         flex-direction: row;
         background-color: rgb(29, 38, 38);
     }
-    
+    .email {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 100%;
+        border-top: 0.01px solid rgb(167, 167, 167);
+    }
     .btn {
         border: none;
     }
@@ -586,11 +592,23 @@ outline:none;
         outline: none;
     }
     .btn__img {
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    .btn__img1 {
+        margin: 10px;   
+    }
+
+    .btn__img2 {
+        margin-left: 10px; 
+        margin-top: 20px;
     }
     
-    .btn__img:hover {
+    .btn__img:hover,
+    .btn__img1:hover,
+    .btn__img2:hover {
         opacity: 0.5;
     }
 
