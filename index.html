@@ -87,7 +87,7 @@
             scrollTop: $(".advantages__title").offset().top  
         }, 1000); 
     });
-    </script></div>
+    </script></div></div>
 <div class="info info_pos">
   <div class="about">
     <h2 class="about__title">О нас</h2>
@@ -153,29 +153,35 @@
 
 <div class="contents contents_pos bgcolor-1">
   <h2 class="contents__title">Обратная связь</h2>
-  <form class="form">
+  <form class="form" action="action.php" method="post">
  <div class="inputs inputs_pos">
   <span class="input input--haruki">
-    <input class="input__field input__field--haruki" type="text" id="input-1">
+    <input class="input__field input__field--haruki" type="text" id="input-1" name="firstname" required>
     <label class="input__label input__label--haruki" for="input-1">
       <span class="input__label-content input__label-content--haruki">First Name</span>
     </label>
   </span>
   <span class="input input--haruki">
-    <input class="input__field input__field--haruki" type="text" id="input-2">
+    <input class="input__field input__field--haruki" type="text" id="input-2" name="middlename" required>
+    <label class="input__label input__label--haruki" for="input-2">
+      <span class="input__label-content input__label-content--haruki">Middle name</span>
+    </label>
+  </span>
+  <span class="input input--haruki">
+    <input class="input__field input__field--haruki" type="text" id="input-3" name="lastname" required>
     <label class="input__label input__label--haruki" for="input-2">
       <span class="input__label-content input__label-content--haruki">Last Name</span>
     </label>
   </span>
   <span class="input input--haruki">
-    <input class="input__field input__field--haruki" type="text" id="input-3">
+    <input class="input__field input__field--haruki" type="text" id="input-4" name="email" required>
     <label class="input__label input__label--haruki" for="input-3">
       <span class="input__label-content input__label-content--haruki">Email</span>
     </label>
   </span>
   <input class="contents__btn contents__btn_pos" value="Отправить" type="button">
 </div>
-  <textarea placeholder="Текст сообщения"></textarea>
+  <textarea type="text" id="input-4" name="text" placeholder="Текст сообщения"></textarea>
 </div>
 </form>
 <script>
@@ -189,12 +195,19 @@
         <footer class="footer_wrapper">
           
           <ul class="column">
-            <li><a href="#">О нас</a></li>
+            <li><a href="#" id="callme6">О нас</a></li>
             <li>Контакты</li>
             <li>Блог</li>
  
           </ul>
 
+<script>
+  $("#callme6").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".about__title").offset().top  
+      }, 1000); 
+  });
+  </script>
           <ul class="column">
             <li>Почему мы</li>
             <li>Наши преимущества</li>
@@ -219,29 +232,17 @@
         <script type="text/javascript">
  
           $(function() {
-           
-          $(window).scroll(function() {
-           
-          if($(this).scrollTop() != 0) {
-           
-          $('#toTop').fadeIn();
-           
-          } else {
-           
+          $(window).scroll(function() { 
+          if($(this).scrollTop() != 0) {  
+          $('#toTop').fadeIn(); 
+          } else { 
           $('#toTop').fadeOut();
-           
           }
-           
           });
-           
           $('#toTop').click(function() {
-           
           $('body,html').animate({scrollTop:0},800);
-           
           });
-           
           });
-           
           </script>
       
       </body>

@@ -138,6 +138,7 @@ span {
 .content__main-img {
     width: 50%;
     padding-top: 20px;
+    height: 100%;
     
 }
 
@@ -148,7 +149,8 @@ span {
     flex-direction: row;
 
 }
-.our-offer_pos,
+.our-offer_pos
+{margin-top: 50px;}
 .advantages_pos,
 .info_pos,
 .reviews_pos,
@@ -157,6 +159,7 @@ span {
     margin-top: 200px;
     
 }
+
 
 .advantages {
     width: 100%;
@@ -200,6 +203,7 @@ span {
 
 .experience img {
     width: 100%;
+    
 
 }
 
@@ -215,6 +219,7 @@ span {
 .nav__img {
     padding-top: 15px;
     width: 15%;
+    height: 100%;
 }
 
 * {
@@ -225,6 +230,14 @@ span {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+  }
+
+  .about__main:hover,
+  .ovos:hover,
+  .pmoos:hover {
+      transform: scale(1.03);
+      transition: 1.5;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 
   .about,
@@ -256,6 +269,7 @@ span {
 }
   .ovos img {
       width: 50%;
+      height: 100%;
       
   }
   
@@ -268,6 +282,7 @@ span {
 }
 .pmoos img {
     width: 50%;
+    height: 100%;
 }
 .pmoos p {
     width: 45%;
@@ -278,9 +293,10 @@ span {
 }
   .about-main__img {
      width: 100%;
+     height: 100%;
   }
   .reviews {
-      width: 90%;
+      width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -356,28 +372,7 @@ span {
   .dot-active {
     background: darkgreen;
   }
-  .brands-logo {
-    display: flex;
-    width: 100%;
-  justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-.brands {
-    width: 95%;
-    background-color: white;
-    justify-content: space-between;
-}
-
-
-
-.barnds__img {
-    margin-top: 30px;
-    width: 25%;
-    padding-left: 30px;
-    height: 25%;
-}
-
+  
 
 .about-main__p {
     font-family: 'Oswald', sans-serif;
@@ -395,6 +390,7 @@ span {
 
 .contents__img {
     width: 45%;
+    height: 100%;
 }
 .input {
 	
@@ -637,5 +633,5 @@ outline:none;
 
         }
         .arrow {
-            width: 100%;
+            width: 50%;
         }
