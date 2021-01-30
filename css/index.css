@@ -5,8 +5,12 @@ body {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-
+    overflow: hidden;
     background: #f3f2f2;
+  
+        height: 100%;
+        overflow: auto;
+    }
 }
 .header_wrapper {
     max-width: 1920px;
@@ -16,8 +20,9 @@ header{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    height: 500px;
-    background: url(../img/mainn.jpg) no-repeat;
+    height: 1000px;
+  
+ 
     background-size: cover;
 
 
@@ -26,18 +31,12 @@ header{
    
 }
 
+/* Слайдер*/
 
 
-.slide-toggle {
-    display: flex;
-   flex-direction: column;
-    width: 70%;
-    overflow: hidden;
-    transition: all 1.5s; 
-    z-index: 2;
-    background-color: white;
-  }
-  
+/* Конец слайдера*/
+
+
 
 
 
@@ -168,9 +167,9 @@ span {
     
 }
 .content__main-img {
-    width: 50%;
+    width: 100%;
     padding-top: 20px;
-    height: 100%;
+    height: 699px;
     
 }
 
@@ -205,24 +204,38 @@ span {
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
     padding: 30px;
-    color: white;
+    color: #5c6f87;
     
 
 }
 
 .experience {
    
-    width: 30%;
+    width: 20%;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: white;
+    
 }
 
 .experience img {
     width: 100%;
+    border-radius: 50%;
     
 
 }
+
+.experience img::after {
+    position: absolute;
+    content: '';
+    -webkit-mask: url(../img/step_arrow_1.png) no-repeat center / contain;
+    background-color: #5c6f87;
+    width: 156px;
+    height: 26px;
+    display: inline-block;
+    left: -50%;
+    top: 40%;
+}
+
 
 .experience p {
     font-family: 'Poppins', sans-serif;
@@ -267,7 +280,9 @@ span {
       flex-direction: column;
       
   }
-
+.main__image {
+    width: 50%;
+}
 
 .blog__main {
     display: flex;
@@ -285,20 +300,21 @@ span {
      
      
   }
+  .pmoos__img,
+  .ovos__img {
+      width: 50%;
+      height: 365px;
+  }
 .pmoos_pos {
     margin-top: 160px;
 }
-  .ovos {
-      background-image: url(/img/ovos.jpg) 50% 50%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: right;
-      overflow: hidden;
-      width: 100%;
-      height: 50%;
-      
-      
-  }
+
+.image-p,
+.image-o {
+    width: 100%;
+    height: 365px
+}
+
   
 .ovos p{
     width: 45%;
@@ -309,12 +325,9 @@ span {
     color: #5c6f87;
     
     height: 100%;
-    padding: 30px;
+    padding-left: 30px;
 }
-.pmoos img {
-    width: 50%;
-    height: 100%;
-}
+
 .pmoos p {
     width: 45%;
     font-family: 'Poppins', sans-serif;

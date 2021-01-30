@@ -4,14 +4,19 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" ></script>
   <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-animate.min.js"></script>
-    <link href="css/index.css" rel="stylesheet" type="text/css"> 
+<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css"> 
     <link href="css/overview.css" rel="stylesheet" type="text/css"> 
-    
+    <link rel="stylesheet" type="text/css" href="css/header-slider .css">  
+
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
     <meta charset="utf-8">
 
@@ -31,9 +36,29 @@
             <a href="#" id="callme4">Отзывы</a>
             <a href="#" id="callme5">Контакты</a>
           </nav>
-        <h1 class="content__title"><p>Экологическое</p> проектирование</h1>
+  
+          
 
-</div>
+          <div class="slider-wrapper">
+            <div class="slider responsive lazy">
+              <div>
+                <div class="image"><img class="slick-slider-img" alt="Alt" src="https://images.unsplash.com/photo-1464082354059-27db6ce50048?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1271&h=847&q=80" /></div>
+              </div>
+              <div>
+                <div class="image"><img class="slick-slider-img" alt="Alt" src="https://images.unsplash.com/photo-1445023835378-9fa9a2089f0c?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1271&h=953&q=80" /></div>
+              </div>
+              <div>
+                <div class="image"><img class="slick-slider-img" alt="Alt" src="https://images.unsplash.com/photo-1441040744088-a70b8213d4d4?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1271&h=847&q=80" /></div>
+              </div>
+              <div>
+                <div class="image"><img class="slick-slider-img" alt="Alt" src="https://images.unsplash.com/photo-1463608666382-cbb244a7bea2?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1271&h=1769&q=80" /></div>
+              </div>
+            </div>
+            <div class="slider-progress">
+              <div class="progress"></div>
+            </div>
+          </div>
+
 </header>
 <div class="our-offer our-offer_pos">
   <h1 class="our-offer__title">Что мы предлагаем</h1>
@@ -54,8 +79,8 @@
         <li>Проекты санитарно-защитных зон предприятий;</li>
         <li>Проекты нормативов допустимых выбросов загрязняющих веществ в атмосферный воздух;</li>
      </ul>
-     <img class="content__main-img" src="img/sheme.png">
-</div>
+     <div class="main__image"><img class="content__main-img" src="img/sheme.png">
+</div></div>
 <script>
   $("#callme").click(function() {
       $('html, body').animate({
@@ -100,14 +125,16 @@
     <h2 class="blog__title">Статьи</h2>
     <div class="blog__main blog__main_pos">
       <div class="ovos">
-    
+    <div class="ovos__img"><img class="image-o" src="img/ovos.jpg"></div>
       <p>Оценка воздействия на окружающую среду (ОВОС) – вид деятельности по выявлению, анализу и учету прямых, косвенных и иных последствий воздействия на окружающую среду планируемой хозяйственной и иной деятельности в целях принятия решения о возможности или невозможности ее осуществления юридическими лицами и индивидуальными предпринимателями.</p>
     </div>
 
     <div class="pmoos pmoos_pos">
-      <img src="img/pmoos.jpg">
+      <div class="pmoos__img"> <img class="image-p" src="img/pmoos.jpg"></div>
       <p>Перечень мероприятий по охране окружающей среды (Раздел ПМ ООС) входит в состав проектной документации и содержит комплекс предложений по рациональному использованию природных ресурсов в строительстве и технических решений по предупреждению негативного воздействия проектируемого объекта на окружающую природную среду.
-    </div>
+  
+    
+      </div>
   </div>
 </div>
 <script>
@@ -228,9 +255,10 @@
         <div id="toTop">
           <img class="arrow" src="img/arrow.png">
         </div>  
-        <script type="text/javascript" src="js/reviews.js"></script>
+        <script src="js/header-sllder.js"></script>
+        <script src="js/reviews.js"></script>
         <script src="js/slider.js"></script>
-        <script type="text/javascript">
+       
  
           $(function() {
           $(window).scroll(function() { 
