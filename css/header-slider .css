@@ -163,13 +163,14 @@
 .slider-progress .progress {
   width: 0%;
   height: 10px;
-  background: #e74c3c;
+  background: #233142;
 }
 
 .image {
   width: 100%;
   height: 800px;
   background-image: url(../img/slider1.jpg);
+ 
 }
 
 .image1 {
@@ -193,5 +194,6 @@
   width: 50%;
   padding-top: 250px;
   padding-left: 70px;
-  text-shadow: 0px 0px 6px rgba(247, 12, 12, 0.7);
+  text-shadow: 0px 0px 6px rgba(44, 121, 237, 0.7);
+  z-index: 20;
 }

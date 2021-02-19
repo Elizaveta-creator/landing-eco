@@ -137,18 +137,20 @@ span {
     flex-direction: row;
     width: 100%;
     z-index: 12;
-    background: url(../img/skyline.jpg);
+    
     background-position: auto;
   
 }
     
 
-.content__main_pos {
+.content__main_pos,
+.content__main2_pos{
     margin-bottom: 50px;
     margin-top: 50px;
 }
-.content__main {
-    width: 50%;
+.content__main, 
+.content__main2 {
+    width: 45%;
     display:flex;
     flex-direction: column;
 
@@ -156,8 +158,9 @@ span {
   
 }
 
-.content__main li{
-    
+.content__main li,
+.content__main2 li{
+    list-style-type: none;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
@@ -168,14 +171,18 @@ span {
     
 }
 
+.content__main img,
+.content__main2 img {
+    width: 10%;
+    padding: 20px;
+   
+
+}
 
 
-.our-offer_pos,
-.advantages_pos,
-.info_pos,
 .reviews_pos,
 .contents_pos
-{margin-top: 50px;}
+{margin-top: 100px;}
 
 
 .advantages {
@@ -184,15 +191,18 @@ span {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    padding-bottom: 4em;
+    padding-bottom: 100px;
+
 }
 
 .our-offer {
     width: 100%;
+background-color: rgb(228, 235, 250);
 
-
+padding-bottom: 100px;
     color: black;
 }
+
 .our-offer__title,
 .advantages__title,
 .reviews__title,
@@ -204,9 +214,11 @@ span {
     width: 100%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-size: 55px;
     padding: 30px;
     color: #5c6f87;
+    padding-bottom: 100px;
+    padding-top: 100px;
     
 
 }
@@ -245,7 +257,7 @@ span {
     font-weight: 400;
     line-height: 30px;
     color: #5c6f87;
-    padding: 30px;
+    padding: 50px;
    
 
 }
@@ -259,29 +271,34 @@ span {
 * {
     box-sizing: border-box;
   }
-  .info {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      background-color: #233142;
-      padding-bottom: 4em;
-  }
+.about__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 50px;
+}
 .about__main_i {
-    width: 100%;
+    width: 50%;
     overflow: hidden;
 }
 
   
  
 
-  .about,
-  .blog {
-      width: 43%;
+  .about {
+    display: flex;
+    background-color: rgb(228, 235, 250);
+      width: 100%;
       flex-direction: column;
+      padding-bottom: 160px;
       
   }
-
+.blog {
+    display: flex;
+    background-color: rgb(250, 250, 239);
+      width: 100%;
+      flex-direction: column; 
+}
 
 .blog__main {
     display: flex;
@@ -304,15 +321,18 @@ span {
       width: 50%;
       height: 365px;
       overflow: hidden;
+      padding-left: 50px;
 
   }
 .pmoos_pos {
     margin-top: 160px;
+    margin-bottom: 160px;
+
 }
 
 .image-p,
 .image-o {
-    width: 100%;
+    width: auto;
     height: 365px;
     transition: 0.3s;
 }
@@ -323,7 +343,7 @@ span {
 }
   
 .ovos p{
-    width: 45%;
+    width: 50%;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 400;
@@ -331,7 +351,7 @@ span {
     color: #5c6f87;
     
     height: 100%;
-    padding-left: 30px;
+    padding-right: 50px;
 }
 
 .pmoos p {
@@ -341,7 +361,7 @@ span {
     font-weight: 400;
     line-height: 30px;
     color: #5c6f87;
-    padding: 30px;
+    padding-right: 50px;
 }
   .about-main__img {
       width: 100%;
@@ -357,7 +377,7 @@ span {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding-bottom: 4em;
+    padding-bottom: 100px;
   }
 
   .slider__controllers {
@@ -370,15 +390,15 @@ span {
     padding: 10px;
   }
   .slider__controllers__next, .slider__controllers__previous {
-    font-size: 24px;
+    font-size: 34px;
     user-select: none;
     cursor: pointer;
-    color: darkgreen;
+    color: rgb(40, 94, 194);
   }
   
   .slider__wrap {
     margin: 20px;
-    width: 60%;
+    width: 90%;
     height: 380px;
     position: relative;
   }
@@ -398,19 +418,19 @@ span {
     opacity: 1;
   }
   .slide:nth-child(1) {
-    background: rgb(228, 245, 228);
+    background: rgb(234, 238, 247);
   }
   .slide:nth-child(2) {
-    background: rgb(228, 245, 228);
+    background: rgb(234, 238, 247);
   }
   .slide:nth-child(3) {
-    background: rgb(228, 245, 228);
+    background: rgb(234, 238, 247);
   }
   .slide:nth-child(4) {
-    background:rgb(228, 245, 228);
+    background:rgb(234, 238, 247);
   }
   .slide:nth-child(5) {
-    background: rgb(228, 245, 228);
+    background: rgb(234, 238, 247);
   }
   
   .slider__dots {
@@ -419,26 +439,27 @@ span {
   }
   
   .dot {
-    background: rgb(122, 143, 122);
-    width: 20px;
-    height: 20px;
+    background: rgb(116, 148, 208);
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    margin: 0 15px;
+    margin: 0 25px;
     cursor: pointer;
   }
   
   .dot-active {
-    background: darkgreen;
+    background: rgb(40, 94, 194);
   }
   
 
 .about-main__p {
+    width: 50%;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 30px;
     color: #5c6f87;
-    padding: 30px;
+    padding: 50px;
 }
 .contents  {
     display: flex;
@@ -447,7 +468,7 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #233142;
-    padding-bottom: 4em;
+    padding-bottom: 100px;
 }
 
 .contents__img {
